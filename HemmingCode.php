@@ -41,6 +41,7 @@ function encodeMessage($message)
         }
     }
     $result = implode($encodedMSG);
+    print 'encoded message:  '.$result."       ";
     return $result;
 }
 
@@ -49,9 +50,9 @@ function controlBitsCalculation($indx, $messageBlock)
 {
     $checkSum = 0;
     $i = $indx-1;
-        while ($i+2 < count($messageBlock)){
+        while ($i < count($messageBlock)){
             $checkSum += array_sum(array_slice($messageBlock, $i, $indx ));
-            $i += 2*($indx + 1);
+            $i += 2*($indx);
         }
         return $checkSum % 2;
 }
@@ -61,7 +62,8 @@ function decodeMessage($message)
 {
     $preparedMSG = str_split($message);
     $correctedMSG =extractInformationBits(correctErr(getIncorrectBitINDX($preparedMSG),$preparedMSG));
-    return implode($correctedMSG);
+    print 'decoded message:  '.implode($correctedMSG)."";
+//    return implode($correctedMSG);
 }
 
 
@@ -79,13 +81,13 @@ function getIncorrectBitINDX($messageBlock)
 
 function extractInformationBits($messageBlock)
 {
-    $i = 0;
     $result = array();
     foreach ($messageBlock as $index=>$bit){
-        if(!in_array($index,controlBitsINDX())){
+        if(!in_array($index+1,controlBitsINDX())){
             array_push($result, $messageBlock[$index]);
         }
     }
+
     return $result;
 }
 
@@ -93,38 +95,20 @@ function extractInformationBits($messageBlock)
 function correctErr($errINDX, $messageBlock)
 {
     if(empty($errINDX)){
-        print 'Message is correct';
         return $messageBlock;
     }
-    switch ($messageBlock[array_sum($errINDX)]){
+    switch ($messageBlock[array_sum($errINDX)-1]){
         case 0:
-            $messageBlock[array_sum($errINDX)] = 1;
+            $messageBlock[array_sum($errINDX)-1] = 1;
             return $messageBlock;
         case 1:
-            $messageBlock[array_sum($errINDX)] = 0;
+            $messageBlock[array_sum($errINDX)-1] = 0;
             return $messageBlock;
     }
 
 }
 
-
-
-
-
-
-
-
-
-
-$basicArr = insertEmptyBits('0100010000111101');
-//print implode($basicArr);
-encodeMessage('0100010000111101');
-
-//getIncorrectBitINDX(encodeMessage('0100010000111101'));
-$basicArr = str_split('100110000110001011101');
-getIncorrectBitINDX($basicArr);
-print implode($basicArr);
-
-print controlBitsCalculation(1,$basicArr);
-print controlBitsCalculation(2,$basicArr);
-
+//
+//encodeMessage('0100010000111101');
+//
+//decodeMessage('100110000110001011101');

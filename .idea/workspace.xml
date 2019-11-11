@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c221e53-891d-4eba-ab26-a1c07fb8718f" name="Default Changelist" comment="" />
+    <list default="true" id="7c221e53-891d-4eba-ab26-a1c07fb8718f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HemmingCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/HemmingCode.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HemmingCode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
-              <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+            <state relative-caret-position="404">
+              <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -38,11 +41,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>insertEmptyBits</find>
+      <find>controlBitsCalculation</find>
+      <find>getIncorrectBitINDX</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/HuffmanCode.php" />
         <option value="$PROJECT_DIR$/HemmingCode.php" />
       </list>
     </option>
@@ -54,6 +63,7 @@
     <option name="width" value="1281" />
     <option name="height" value="732" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -106,22 +116,24 @@
       <updated>1572706798961</updated>
       <workItem from="1572706807429" duration="11110000" />
       <workItem from="1572803259760" duration="10690000" />
-      <workItem from="1572908803227" duration="16343000" />
+      <workItem from="1572908803227" duration="17472000" />
+      <workItem from="1573046242940" duration="6292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38143000" />
+    <option name="totallyTimeSpent" value="45564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16175298" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16414343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61823803" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19689922" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -129,7 +141,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32921174" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33023256" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -141,10 +153,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HuffmanCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HemmingCode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+        <state relative-caret-position="404">
+          <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
         </state>
       </provider>
     </entry>
